@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Compose from './buttons/Compose';
+// import VideocamIcon from '@mui/icons-material/Videocam';
+// import KeyboardIcon from '@mui/icons-material/Keyboard';
 import { sidebarButtonItems }  from '../Components/data/SidebarButtonItems';
 
 const Sidebar = () => {
@@ -23,7 +25,11 @@ const Sidebar = () => {
             </SideButtonsWrapper>
 
             <MeetWrapper>
-                {/* GOOGLE MEET STUFF */}
+             <Title>Meet</Title>
+               {/* <VideocamIcon/> 
+               <KeyboardIcon/>  */}
+               <p>ICON</p>
+               <p>ICON</p>
             </MeetWrapper>
 
             <HangoutsWrapper>
@@ -71,7 +77,26 @@ const SidebarButtonItems = styled.div`
     }
 `
    
-const MeetWrapper = styled.div``;
+const MeetWrapper = styled.div`
+    position: relative;
+    top: 300px;
+    border-top: 1px solid lightgray;
+
+    p{
+        display: grid;
+        color: gray;
+        grid-template-columns:  14% auto;
+        height: 30px;
+        align-items: center;
+        padding-left: 25px;
+    }
+`;
+
+const Title = styled.h4`
+    padding-left: 25px;
+    margin-bottom: 3px;
+    margin-top: 8px;
+`
          
 const HangoutsWrapper = styled.div``;
      
